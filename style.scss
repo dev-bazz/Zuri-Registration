@@ -1,0 +1,44 @@
+@use './reset.scss' as *;
+@use './_tools.scss' as *;
+@use './_variables.scss' as *;
+@use './font' as *;
+
+
+main{
+        padding-inline: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        display: grid;
+        place-items: center;
+}
+
+.main-form{
+        width: clamp(pixToRem(150px), 100%, pixToRem(400px));
+        margin: auto;
+        * + .form-element{
+                margin-top: pixToRem(12px);
+        }
+        .form-element{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                border: 1px solid $light-grey;
+                border-radius: pixToRem(4px);
+                padding-block: pixToRem(12px);
+                padding-inline: pixToRem(16px);
+
+                
+                input{
+                        all: unset;
+                        max-height: pixToRem(12px);
+                        margin-top: pixToRem(8px);
+                }
+                input[type="number"]{
+                        color: $light-grey;
+                }
+                label{
+                        font-size: pixToRem(12px);
+                }
+        }
+
+        
+}
