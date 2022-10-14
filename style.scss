@@ -54,8 +54,8 @@ main{
                 }
                 input[type="number"]{
                         appearance: textfield;
-                        color: $light-grey;
-                        -webkit-appearance: none;
+                        
+                        
                 }
                 label{
                         font-size: pixToRem(12px);
@@ -64,7 +64,7 @@ main{
         }
 
         .cta{
-                $primary:aqua;
+                $primary:#453F78;
                 all: unset;
                 text-align: center;
                 ;
@@ -73,6 +73,7 @@ main{
                 padding-block: pixToRem(12px, em);
                 border-radius: pixToRem(4px, em);
                 margin-top: pixToRem(16px, em);
+                color: white;
 
                 &:hover{
                         cursor: pointer;
@@ -93,6 +94,7 @@ main{
                 background-color: white;
                 border: none;
                 border: pixToRem(1px,em) solid $light-grey;
+                
 
                 
         }

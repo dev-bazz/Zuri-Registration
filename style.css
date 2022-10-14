@@ -135,8 +135,6 @@ main {
   -webkit-appearance: textfield;
      -moz-appearance: textfield;
           appearance: textfield;
-  color: #8a8a8a;
-  -webkit-appearance: none;
 }
 .main-form .form-element label {
   font-size: 0.75rem;
@@ -145,16 +143,17 @@ main {
 .main-form .cta {
   all: unset;
   text-align: center;
-  background-color: aqua;
+  background-color: #453F78;
   width: 100%;
   padding-block: 0.75em;
   border-radius: 0.25em;
   margin-top: 1em;
+  color: white;
 }
 .main-form .cta:hover {
   cursor: pointer;
   transition: background 200ms ease-in-out;
-  background-color: #66ffff;
+  background-color: #736bb2;
 }
 
 .form-select {
